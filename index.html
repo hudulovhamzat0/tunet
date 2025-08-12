@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/media/favicon.ico" type="image/x-icon">
+    <title>Tunet</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav-container">
+        <div class="logo">
+        <img src="assets/media/photo/logo.png" alt="Logo" class="logo-image" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Ana Səhifə</a></li>
+          <li><a href="#">Detallar</a></li>
+          <li><a href="#">Özəlliklər</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Əlaqə</a></li>
+        </ul>
+        <a href="#" class="nav-button">Qeydiyyatdan keç</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Biznesiniz üçün davamlı gəlir yeri</h1>
+        <p>
+          Servis olaraq Tunetə qoşulun və istifadəçilərə öz paketlərinizi ən rahat şəkildə təqdim edin.
+        </p>
+        <a href="#" class="hero-button">Qeydiyyatdan keç</a>
+      </div>
+    <div class="hero-image">
+        <img src="assets/media/photo/landing.png" alt="Hero Image" class="hero-img" />
+    </div>
+
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <p id="left"><div class="feature-icon"><img src="assets/media/icons/4square.png" alt="Services icon"></div></p>
+        <h3>Hər növ xidmət, bir ünvan</h3>
+        <p>
+            Burada hansı xidmət sahəsində olmağınızdan baxmayaraq özünüzü müştərilərə təqdim edə bilərsiniz.
+        </p>
+      </div>
+      <div class="feature">
+        <p id="left"><div class="feature-icon"><img src="assets/media/icons/packet.png" alt="Subscription packages icon"></div></p>
+        <h3>Abunəlik paketləri</h3>
+        <p>
+          Siz burda abunəlik paketlərinizi yaradıb müştəriləriniz üçün xidmətləri daha asan və planlı hala gətirə bilərsiniz.
+        </p>
+      </div>
+      <div class="feature">
+        <p id="left"><div class="feature-icon"><img src="assets/media/icons/lock.png" alt="Security icon"></div></p>
+        <h3>Təhlükəsizlik və idarəetmə</h3>
+        <p>
+          Sizin brendiniz platformada tam təhlükəsiz və ən detallı formada idarə edə və yeni müştərilər qazana bilərsiniz.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Özəliklər</h2>
+      <p style="color: #6c757d; margin-bottom: 40px">
+        Abunəlik sistemində ilk dəfə istifadə olunan həm biznes həm də istifaçi yönümlü yeniliklərlə dəyişikliyə ilk addımı at.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <div class="card-image">
+            <img src="/assets/media/photo/cards/card1.png" alt="Sərbəst idarə oluna bilən xidmət paketləri">
+          </div>
+          <div class="card-content">
+            <h3>Sərbəst idarə oluna bilən xidmət paketləri</h3>
+            <p>
+              Sample text for now
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="/assets/media/photo/cards/card2.png" alt="Günlük-aylıq-illik müştəri statistikaları">
+          </div>
+          <div class="card-content">
+            <h3>Günlük-aylıq-illik müştəri statistikaları</h3>
+            <p>
+              Sample text for now
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="/assets/media/photo/cards/card3.png" alt="Bizneslərdə özəl idarə etmə paneli">
+          </div>
+          <div class="card-content">
+            <h3>Bizneslərdə özəl idarə etmə paneli</h3>
+            <p>
+              Sample text for now
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="faq-container">
+        <h2 class="faq-title">Tez-tez soruşulan suallar</h2>
+        <p class="faq-subtitle">
+          Applikasiya ilə bağlı ən çox soruşulan suallara cavablar tap.
+        </p>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(0)">
+            Tətbiqlə necə başlayım?
+            <span class="faq-arrow" id="arrow-0">▼</span>
+          </div>
+          <div class="faq-answer" id="answer-0">
+            Bu möhtəşəm həll ilə tətbiqi yükləyin, hesab yaradın və biznesi
+            inkişaf etdirin. Sadəcə bir neçə addımda hazırsınız!
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(1)">
+            Hansı növ paketlər yarada bilərəm?
+            <span class="faq-arrow" id="arrow-1">▼</span>
+          </div>
+          <div class="faq-answer" id="answer-1">
+            Bu möhtəşəm həll ilə istədiyiniz hər cür biznes paketini yarada
+            bilərsiniz. Limitlərimiz yoxdur!
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(2)">
+            Şəxsi və maliyyə məlumatlarım təhlükəsizdirmi?
+            <span class="faq-arrow" id="arrow-2">▼</span>
+          </div>
+          <div class="faq-answer" id="answer-2">
+            Bu möhtəşəm həll ilə bütün məlumatlarınız ən yüksək təhlükəsizlik
+            standartları ilə qorunur.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(3)">
+            Hesabımdan pulu necə çıxara bilərəm?
+            <span class="faq-arrow" id="arrow-3">▼</span>
+          </div>
+          <div class="faq-answer" id="answer-3">
+            Bu möhtəşəm həll ilə saniyələr içində pulunuzu istədiyiniz yerə
+            çıxara bilərsiniz.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(4)">
+            Tətbiqdən istifadə ilə bağlı hansı ödənişlər var?
+            <span class="faq-arrow" id="arrow-4">▼</span>
+          </div>
+          <div class="faq-answer" id="answer-4">
+            Bu möhtəşəm həll ilə ən sərfəli qiymətlərlə xidmət alırsınız. Gizli
+            ödənişlərimiz yoxdur!
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(5)">
+            Fərdiləşdirilmiş abunəlik ala bilərəmmi?
+            <span class="faq-arrow" id="arrow-5">▼</span>
+          </div>
+          <div class="faq-answer" id="answer-5">
+            Bu möhtəşəm həll ilə tamamilə sizə uyğun fərdiləşdirilmiş abunəlik
+            paketləri əldə edə bilərsiniz.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(6)">
+            Abunəliklərimin uğurunu necə izləyə bilərəm?
+            <span class="faq-arrow" id="arrow-6">▼</span>
+          </div>
+          <div class="faq-answer" id="answer-6">
+            Bu möhtəşəm həll ilə real vaxt analitikası və detallı hesabatlarla
+            hər şeyi izləyə bilərsiniz.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFAQ(7)">
+            Tətbiqlə bağlı köməyə ehtiyacım olarsa nə etməliyəm?
+            <span class="faq-arrow" id="arrow-7">▼</span>
+          </div>
+          <div class="faq-answer" id="answer-7">
+            Bu möhtəşəm həll ilə 24/7 dəstək komandamız həmişə sizə kömək etməyə
+            hazırdır!
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+    <div class="cta-container">
+        <div class="cta-text">
+        <h2 class="cta-title">Elə indi pulsuz qoşulun!</h2>
+        <p class="cta-desc">
+            İndi qoşulun və müştərilərinizlə daha da yaxınlaşın. Etməli olduğunuz
+            tək şey qeydiyyatdan keçib biz tərəfdən cavab gözləməkdir.
+        </p>
+        </div>
+        <a href="#" class="cta-button">Qeydiyyatdan keç</a>
+    </div>
+    </section>
+    <br><br>
+
+
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+        <div class="footer-logo">
+        <img src="assets/media/photo/logo.png" alt="Logo" class="logo-image" />
+        </div>
+          <ul class="footer-links">
+            <li><a href="#">Haqqımızda</a></li>
+            <li><a href="#">Əlaqə</a></li>
+            <li><a href="#">Şərtlər</a></li>
+            <li><a href="#">Təhlükəsizlik</a></li>
+          </ul>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-bottom">© 2025 TUNET</div>
+      </div>
+    </footer>
+  </body>
+  <script src="assets/js/index.js"></script>
+</html>
