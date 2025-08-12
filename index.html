@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="tr">
   <head>
-    <link rel="stylesheet" href="assets/css/index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/index.css"/>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/media/favicon.ico" type="image/x-icon">
     <title>Tunet</title>
   </head>
   <body>
-    <header class="header">
+    <!-- Desktop Version -->
+    <div class="desktop-container">
+          <header class="header">
       <nav class="nav-container">
         <div class="logo">
         <img src="assets/media/photo/logo.png" alt="Logo" class="logo-image" />
@@ -235,6 +236,240 @@
         <div class="footer-bottom">© 2025 TUNET</div>
       </div>
     </footer>
+    </div>
+    </footer>
+    <!-- Mobile Version -->
+    <div class="mobile-container">
+
+
+      <!-- Hero Section -->
+      <section class="mobile-hero-section">
+        <div class="floating-elements">
+          <div class="floating-circle circle-1"></div>
+          <div class="floating-circle circle-2"></div>
+          <div class="floating-circle circle-3"></div>
+        </div>
+        
+        <div class="hero-phones">
+          <img style="width: 100%; height: auto; border-radius: 10% 10% 10% 10%;" src="assets/media/photo/landing.png" alt="landing">
+        </div>
+
+        <h1 class="mobile-hero-title">Biznesiniz üçün davamlı gəlir yeri</h1>
+        <p class="mobile-hero-subtitle">Servis olaraq Tunetə qoşulun və istifadəçilərə öz paketlərinizi ən rahat şəkildə təqdim edin.</p>
+        <a href="#" class="mobile-cta-button">Qeydiyyatdan keç</a>
+      </section>
+
+      <!-- Features Section -->
+      <section class="mobile-features-section">
+        <h2 class="mobile-section-title">Hər növ xidmət, bir ünvan</h2>
+        <p class="mobile-section-subtitle">Biznesinizi inkişaf etdirmək üçün lazım olan hər şey</p>
+        
+        <div class="mobile-feature-card">
+          <div class="mobile-feature-icon">
+            <i class="fas fa-th-large"></i>
+          </div>
+          <h3 class="mobile-feature-title">Hər növ xidmət</h3>
+          <p class="mobile-feature-description">Hansı xidmət sahəsində olmağınızdan baxmayaraq özünüzü müştərilərə təqdim edə bilərsiniz.</p>
+        </div>
+
+        <div class="mobile-feature-card">
+          <div class="mobile-feature-icon">
+            <i class="fas fa-star"></i>
+          </div>
+          <h3 class="mobile-feature-title">Abunəlik paketləri</h3>
+          <p class="mobile-feature-description">Abunəlik paketlərinizi yaradıb müştəriləriniz üçün xidmətləri daha asan və planlı hala gətirin.</p>
+        </div>
+
+        <div class="mobile-feature-card">
+          <div class="mobile-feature-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3 class="mobile-feature-title">Təhlükəsizlik və idarəetmə</h3>
+          <p class="mobile-feature-description">Brendiniz platformada tam təhlükəsiz və detallı formada idarə edə və yeni müştərilər qazana bilərsiniz.</p>
+        </div>
+      </section>
+
+      <!-- Cards Section -->
+    <section class="mobile-cards-section">
+        <h2 class="mobile-section-title">Özəlliklər</h2>
+        <p class="mobile-section-subtitle">Abunəlik sistemində ilk dəfə istifadə olunan həm biznəs həm də istifadəçi yönümlü yeniliklərrlə dəyişikliyə ilk addımı at.</p>
+        
+        <div class="mobile-card">
+            <div class="mobile-card-image">
+                <img src="assets/media/photo/cards/card1.png" alt="">
+            </div>
+            <div class="mobile-card-content">
+                <h3 class="mobile-card-title">Sərbəst idarə oluna bilən xidmət paketləri</h3>
+                <p class="mobile-card-text">Learn how to analyze and interpret market trends to make informed investment decisions.</p>
+            </div>
+        </div>
+        
+        <div class="mobile-card">
+            <div class="mobile-card-image">
+                <img src="assets/media/photo/cards/card2.png" alt="">
+            </div>
+            <div class="mobile-card-content">
+                <h3 class="mobile-card-title">Günlük-aylıq-illik müştəri statistikaları</h3>
+                <p class="mobile-card-text">Discover the benefits of diversification and how to build a balanced portfolio that mitigates risks.</p>
+            </div>
+        </div>
+        
+        <div class="mobile-card">
+            <div class="mobile-card-image">
+                <img src="assets/media/photo/cards/card3.png" alt="">
+            </div>
+            <div class="mobile-card-content">
+                <h3 class="mobile-card-title">Bizneslərdə özəl idarə etmə paneli</h3>
+                <p class="mobile-card-text">Explore the psychological aspects of investing and learn how to overcome common biases and emotions.</p>
+            </div>
+        </div>
+    </section>
+
+      <!-- FAQ Section -->
+      <section class="mobile-faq-section">
+        <h2 class="mobile-section-title">Tez-tez soruşulan suallar</h2>
+        <p class="mobile-section-subtitle">Applikasiya ilə bağlı ən çox soruşulan suallara cavablar tap.</p>
+
+        <div class="mobile-faq-item">
+          <div class="mobile-faq-question" onclick="toggleMobileFAQ(0)">
+            Tətbiqlə necə başlayım?
+            <span class="mobile-faq-arrow" id="mobile-arrow-0">▼</span>
+          </div>
+          <div class="mobile-faq-answer" id="mobile-answer-0">
+            <p>Bu möhtəşəm həll ilə tətbiqi yükləyin, hesab yaradın və biznesi inkişaf etdirin. Sadəcə bir neçə addımda hazırsınız!</p>
+          </div>
+        </div>
+
+        <div class="mobile-faq-item">
+          <div class="mobile-faq-question" onclick="toggleMobileFAQ(1)">
+            Hansı növ paketlər yarada bilərəm?
+            <span class="mobile-faq-arrow" id="mobile-arrow-1">▼</span>
+          </div>
+          <div class="mobile-faq-answer" id="mobile-answer-1">
+            <p>İstədiyiniz hər cür biznes paketini yarada bilərsiniz. Limitlərimiz yoxdur!</p>
+          </div>
+        </div>
+
+        <div class="mobile-faq-item">
+          <div class="mobile-faq-question" onclick="toggleMobileFAQ(2)">
+            Şəxsi və maliyyə məlumatlarım təhlükəsizdirmi?
+            <span class="mobile-faq-arrow" id="mobile-arrow-2">▼</span>
+          </div>
+          <div class="mobile-faq-answer" id="mobile-answer-2">
+            <p>Bütün məlumatlarınız ən yüksək təhlükəsizlik standartları ilə qorunur.</p>
+          </div>
+        </div>
+
+        <div class="mobile-faq-item">
+          <div class="mobile-faq-question" onclick="toggleMobileFAQ(3)">
+            Hesabımdan pulu necə çıxara bilərəm?
+            <span class="mobile-faq-arrow" id="mobile-arrow-3">▼</span>
+          </div>
+          <div class="mobile-faq-answer" id="mobile-answer-3">
+            <p>Saniyələr içində pulunuzu istədiyiniz yerə çıxara bilərsiniz.</p>
+          </div>
+        </div>
+
+        <div class="mobile-faq-item">
+          <div class="mobile-faq-question" onclick="toggleMobileFAQ(4)">
+            Tətbiqdən istifadə ilə bağlı hansı ödənişlər var?
+            <span class="mobile-faq-arrow" id="mobile-arrow-4">▼</span>
+          </div>
+          <div class="mobile-faq-answer" id="mobile-answer-4">
+            <p>Ən sərfəli qiymətlərlə xidmət alırsınız. Gizli ödənişlərimiz yoxdur!</p>
+          </div>
+        </div>
+
+        <div class="mobile-faq-item">
+          <div class="mobile-faq-question" onclick="toggleMobileFAQ(5)">
+            Fərdiləşdirilmiş abunəlik ala bilərəmmi?
+            <span class="mobile-faq-arrow" id="mobile-arrow-5">▼</span>
+          </div>
+          <div class="mobile-faq-answer" id="mobile-answer-5">
+            <p>Tamamilə sizə uyğun fərdiləşdirilmiş abunəlik paketləri əldə edə bilərsiniz.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final CTA -->
+      <section class="mobile-final-cta">
+        <h2>Elə indi pulsuz qoşulun!</h2>
+        <p>İndi qoşulun və müştərilərinizlə daha da yaxınlaşın. Etməli olduğunuz tək şey qeydiyyatdan keçib biz tərəfdən cavab gözləməkdir.</p>
+        <a href="#" class="mobile-cta-button">Qeydiyyatdan keç</a>
+      </section>
+
+      <!-- Footer -->
+      <footer class="mobile-footer">
+        <div class="mobile-footer-logo">T</div>
+        <div class="mobile-footer-links">
+          <a href="#">Haqqımızda</a>
+          <a href="#">Əlaqə</a>
+          <a href="#">Şərtlər</a>
+          <a href="#">Təhlükəsizlik</a>
+        </div>
+        <div class="mobile-social-links">
+          <a href="#" class="mobile-social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="mobile-social-link"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="mobile-social-link"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="mobile-social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="mobile-social-link"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="mobile-footer-bottom">© 2025 TUNET</div>
+      </footer>
+    </div>
+
+    <script>
+      function toggleFAQ(index) {
+        const answer = document.getElementById(`answer-${index}`);
+        const arrow = document.getElementById(`arrow-${index}`);
+
+        // Close all other FAQs
+        for (let i = 0; i < 8; i++) {
+          if (i !== index) {
+            const otherAnswer = document.getElementById(`answer-${i}`);
+            const otherArrow = document.getElementById(`arrow-${i}`);
+            if (otherAnswer && otherArrow) {
+              otherAnswer.classList.remove("expanded");
+              otherArrow.classList.remove("expanded");
+            }
+          }
+        }
+
+        // Toggle current FAQ
+        if (answer.classList.contains("expanded")) {
+          answer.classList.remove("expanded");
+          arrow.classList.remove("expanded");
+        } else {
+          answer.classList.add("expanded");
+          arrow.classList.add("expanded");
+        }
+      }
+
+      function toggleMobileFAQ(index) {
+        const answer = document.getElementById(`mobile-answer-${index}`);
+        const arrow = document.getElementById(`mobile-arrow-${index}`);
+
+        // Close all other mobile FAQs
+        for (let i = 0; i < 6; i++) {
+          if (i !== index) {
+            const otherAnswer = document.getElementById(`mobile-answer-${i}`);
+            const otherArrow = document.getElementById(`mobile-arrow-${i}`);
+            if (otherAnswer && otherArrow) {
+              otherAnswer.classList.remove("expanded");
+              otherArrow.classList.remove("expanded");
+            }
+          }
+        }
+
+        // Toggle current mobile FAQ
+        if (answer.classList.contains("expanded")) {
+          answer.classList.remove("expanded");
+          arrow.classList.remove("expanded");
+        } else {
+          answer.classList.add("expanded");
+          arrow.classList.add("expanded");
+        }
+      }
+    </script>
   </body>
-  <script src="assets/js/index.js"></script>
 </html>
