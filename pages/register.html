@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tunet - Biznes olaraq qoşulun</title>
+    <link rel="stylesheet" href="../assets/css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="header">
+                <div class="logo"><img style="width: 50px;" src="../assets/media/photo/logo.png" alt=""></div>
+                <h1 class="title">Biznes olaraq Tunet-ə qoşulun</h1>
+                <p class="subtitle">Xidmət sahəsində yeni pillələrə addım atın</p>
+                
+                <div class="rating">
+                    <div class="rating-badges">
+                        <img src="../assets/media/photo/logo.png" alt="Rating Badge" width="50px">
+                    </div>
+                    <div class="stars-container">
+                        <div class="stars-background">★★★★★</div>
+                        <div class="stars-filled" id="starsFilled">★★★★★</div>
+                    </div>
+                    <span class="rating-text">5.0</span>
+                </div>
+            </div>
+            
+            <form id="businessForm">
+                <div class="form-section">
+                    <h3 class="section-title">Şəxsi məlumatlar</h3>
+                    <div class="form-grid">
+                        <div class="form-group half-width">
+                            <label>Ad <span class="required">*</span></label>
+                            <input type="text" name="firstName" required>
+                        </div>
+                        <div class="form-group half-width">
+                            <label>Soyad <span class="required">*</span></label>
+                            <input type="text" name="lastName" required>
+                        </div>
+                        <div class="form-group half-width">
+                            <label>Email <span class="required">*</span></label>
+                            <input type="email" name="email" required>
+                        </div>
+                        <div class="form-group half-width">
+                            <label>Telefon nömrəsi <span class="required">*</span></label>
+                            <input type="tel" name="phone" placeholder="+994" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h3 class="section-title">Biznes detalları</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Biznesin adı <span class="required">*</span></label>
+                            <input type="text" name="businessName" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Slogan <span class="required">*</span></label>
+                            <input type="text" name="slogan" placeholder="Biznesinizin sloqanını daxil edin" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Kateqoriya <span class="required">*</span></label>
+                            <select name="category" required>
+                                <option value="">Seçin</option>
+                                <option value="restaurant">Restoran</option>
+                                <option value="service">Xidmət</option>
+                                <option value="retail">Pərakəndə</option>
+                            </select>
+                        </div>
+                        <div class="form-group price-range">
+                            <div class="price-input-group">
+                                <label style="font-size: 12px;">Min qiymət <span class="required">*</span></label>
+                                <input type="number" name="minPrice" placeholder="0" min="0" required style="font-size: 12px; padding: 8px 12px;">
+                            </div>
+                            <div class="price-input-group">
+                                <label style="font-size: 12px;">Max qiymət <span class="required">*</span></label>
+                                <input type="number" name="maxPrice" placeholder="1000" min="0" required style="font-size: 12px; padding: 8px 12px;">
+                            </div>
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Ölçü haqqında</label>
+                            <textarea name="description" placeholder="Biznesiniz haqqında qısa məlumat..."></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Şəkillər <span class="required">*</span></label>
+                        <div class="file-upload" onclick="document.getElementById('fileInput').click()">
+                            <div class="file-upload-icon">📷</div>
+                            <p>Drag and drop files here</p>
+                            <p style="font-size: 12px; color: #999;">Maximum file size: 5MB each</p>
+                            <input type="file" id="fileInput" name="images" multiple accept="image/*" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-btn">Göndər</button>
+            </form>
+        </div>
+        
+        <div class="right-section">
+            <div class="info-card">
+                <h3 class="info-title">Niyə Tunet?</h3>
+                <p class="info-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                
+                <p class="info-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                
+                <p class="info-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                
+                <div class="phone-mockup">
+                    <div class="phone">
+                        <div class="phone-screen">
+                            <div class="phone-logo"><img width="50px" src="../assets/media/photo/logo.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>© 2025 TUNET</p>
+        <div style="margin-top: 10px;">
+            <a href="#" style="color: #666; text-decoration: none; margin: 0 10px;">Haqqımızda</a>
+            <a href="#" style="color: #666; text-decoration: none; margin: 0 10px;">Xidmət</a>
+            <a href="#" style="color: #666; text-decoration: none; margin: 0 10px;">Şərtlər</a>
+            <a href="#" style="color: #666; text-decoration: none; margin: 0 10px;">Təhlükəsizlik</a>
+        </div>
+    </div>
+    
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-icon">✓</div>
+            <h3 class="modal-title">Qeydiyyat uğurlu oldu</h3>
+            <p class="modal-text">Komandamız ən yaxın zamanda sizə geri dönüş edəcəkdir. Gözləməde qalın!</p>
+            <button class="modal-btn" onclick="closeModal()">Bağla</button>
+        </div>
+    </div>
+
+    <script src="../assets/js/register.js"></script>
+</body>
+</html>

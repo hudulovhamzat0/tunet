@@ -469,7 +469,6 @@ body {
 
       .mobile-container {
         display: block;
-        max-width: 390px;
         margin: 0 auto;
         background: white;
         min-height: 100vh;
@@ -1552,4 +1551,140 @@ body {
  .mobile-cards-container {
    gap: 20px;
  }
+}
+/* Header əsas dizayn */
+.hdr-hamzat-uniquexyz-001 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff; /* Tema ağ */
+  color: #222;
+  padding: 10px 20px;
+  font-family: sans-serif;
+  position: relative;
+  z-index: 9999;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Logo şəkli */
+.hdr-hamzat-logo-uniquexyz-001 img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+/* Desktop menyu */
+.hdr-hamzat-nav-uniquexyz-001 ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hdr-hamzat-nav-uniquexyz-001 ul li {
+  margin-left: 20px;
+}
+
+.hdr-hamzat-nav-uniquexyz-001 ul li a {
+  color: #222;
+  text-decoration: none;
+  transition: color 0.3s;
+  position: relative;
+  padding-right: 15px;
+}
+
+/* Aktiv link sağ tərəfdə mavi vertikal xətt */
+.hdr-hamzat-nav-uniquexyz-001 ul li a.active-hamzat-uniquexyz-001::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background: #007bff; /* Mavi xətt */
+}
+
+/* Hover effekti */
+.hdr-hamzat-nav-uniquexyz-001 ul li a:hover {
+  color: #007bff;
+}
+
+/* Qeydiyyat butonu */
+.hdr-hamzat-register-btn-uniquexyz-001 {
+  display: inline-block;
+  margin-top: auto;
+  background: #007bff;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.hdr-hamzat-register-btn-uniquexyz-001:hover {
+  background: #0056b3;
+}
+
+/* Hamburger icon */
+.hdr-hamzat-toggle-uniquexyz-001 {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Close icon */
+.hdr-hamzat-close-uniquexyz-001 {
+  display: none;
+  font-size: 24px;
+  color: #222;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* Mobile görünüş */
+@media (max-width: 768px) {
+  .hdr-hamzat-toggle-uniquexyz-001 {
+    display: block;
+  }
+
+  .hdr-hamzat-nav-uniquexyz-001 {
+    position: fixed;
+    top: 0;
+    right: -70%;
+    height: 100vh;
+    width: 70%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transition: right 0.3s ease;
+    z-index: 9998;
+    border-left: 1px solid #ddd;
+  }
+
+  .hdr-hamzat-nav-uniquexyz-001 ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hdr-hamzat-nav-uniquexyz-001 ul li {
+    margin: 20px 0;
+  }
+
+  .hdr-hamzat-close-uniquexyz-001 {
+    display: block;
+  }
+
+  /* Açıldığında */
+  .hdr-hamzat-nav-uniquexyz-001.show-hamzat-uniquexyz-001 {
+    right: 0;
+  }
+
+  /* Qeydiyyat butonu mobil menyuda aşağıda */
+  .hdr-hamzat-register-btn-uniquexyz-001 {
+    margin-top: auto;
+    width: 100%;
+  }
 }

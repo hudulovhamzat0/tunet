@@ -22,7 +22,7 @@
           <li><a href="#">FAQ</a></li>
           <li><a href="#">Əlaqə</a></li>
         </ul>
-        <a href="#" class="nav-button">Qeydiyyatdan keç</a>
+        <a href="pages/register.html" class="nav-button">Qeydiyyatdan keç</a>
       </nav>
     </header>
 
@@ -32,7 +32,7 @@
         <p>
           Servis olaraq Tunetə qoşulun və istifadəçilərə öz paketlərinizi ən rahat şəkildə təqdim edin.
         </p>
-        <a href="#" class="hero-button">Qeydiyyatdan keç</a>
+        <a href="pages/register.html" class="hero-button">Qeydiyyatdan keç</a>
       </div>
     <div class="hero-image">
         <img src="assets/media/photo/landing.png" alt="Hero Image" class="hero-img" />
@@ -206,7 +206,7 @@
             tək şey qeydiyyatdan keçib biz tərəfdən cavab gözləməkdir.
         </p>
         </div>
-        <a href="#" class="cta-button">Qeydiyyatdan keç</a>
+        <a href="pages/register.html" class="cta-button">Qeydiyyatdan keç</a>
     </div>
     </section>
     <br><br>
@@ -241,7 +241,30 @@
     <!-- Mobile Version -->
     <div class="mobile-container">
 
+<header class="hdr-hamzat-uniquexyz-001">
+    <div class="hdr-hamzat-logo-uniquexyz-001">
+        <img src="assets/media/photo/logo.png" alt="Logo">
+    </div>
+    <nav class="hdr-hamzat-nav-uniquexyz-001">
+        <!-- X bağlama ikonu -->
+        <div class="hdr-hamzat-close-uniquexyz-001" id="hdr-hamzat-close-uniquexyz-001">✖</div>
 
+        <ul>
+            <li><a href="#home" class="active-hamzat-uniquexyz-001">Ana Səhifə</a></li>
+            <li><a href="#about">Haqqında</a></li>
+            <li><a href="#services">Xidmətlər</a></li>
+            <li><a href="#contact">Əlaqə</a></li>
+        </ul>
+
+        <!-- Qeydiyyat butonu -->
+        <a href="pages/register.html" class="hdr-hamzat-register-btn-uniquexyz-001">Qeydiyyat</a>
+    </nav>
+
+    <!-- Hamburger ikonu -->
+    <div class="hdr-hamzat-toggle-uniquexyz-001" id="hdr-hamzat-toggle-uniquexyz-001">
+        ☰
+    </div>
+</header>
       <!-- Hero Section -->
       <section class="mobile-hero-section">
         <div class="floating-elements">
@@ -256,7 +279,7 @@
 
         <h1 class="mobile-hero-title">Biznesiniz üçün davamlı gəlir yeri</h1>
         <p class="mobile-hero-subtitle">Servis olaraq Tunetə qoşulun və istifadəçilərə öz paketlərinizi ən rahat şəkildə təqdim edin.</p>
-        <a href="#" class="mobile-cta-button">Qeydiyyatdan keç</a>
+        <a href="pages/register.html" class="mobile-cta-button">Qeydiyyatdan keç</a>
       </section>
 
       <!-- Features Section -->
@@ -471,7 +494,31 @@
           answer.classList.add("expanded");
           arrow.classList.add("expanded");
         }
-      }
+      }// Menyu açmaq üçün
+document.getElementById("hdr-hamzat-toggle-uniquexyz-001")
+  .addEventListener("click", function() {
+    document.querySelector(".hdr-hamzat-nav-uniquexyz-001")
+      .classList.add("show-hamzat-uniquexyz-001");
+  });
+
+// Menyu bağlamaq üçün
+document.getElementById("hdr-hamzat-close-uniquexyz-001")
+  .addEventListener("click", function() {
+    document.querySelector(".hdr-hamzat-nav-uniquexyz-001")
+      .classList.remove("show-hamzat-uniquexyz-001");
+  });
+
+// Aktiv link dəyişdirmək üçün
+document.querySelectorAll(".hdr-hamzat-nav-uniquexyz-001 ul li a").forEach(link => {
+  link.addEventListener("click", function() {
+    document.querySelectorAll(".hdr-hamzat-nav-uniquexyz-001 ul li a")
+      .forEach(el => el.classList.remove("active-hamzat-uniquexyz-001"));
+    this.classList.add("active-hamzat-uniquexyz-001");
+  });
+});
+
+
+
     </script>
   </body>
 </html>
