@@ -1,3 +1,3 @@
-1) <p style="color: red;"> index.html => mobil versiyanı figma ilə birəbir etmək </p>
-2) pages/register.html => figma ilə birəbir etmək
-3) pages/ => digər səhifələri yazmaq
+<p style="color: orange;">1) <b>index.html</b> → mobil versiyanı Figma ilə birəbir etmək</p>
+<p style="color: orange;">2) <b>pages/register.html</b> → Figma ilə birəbir etmək</p>
+<p style="color: red;">3) <b>pages/</b> → digər səhifələri yazmaq</p>
