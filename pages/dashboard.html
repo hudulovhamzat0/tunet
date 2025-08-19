@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tunet Dashboard (HTML+CSS)</title>
+    <link rel="stylesheet" href="../assets/css/dashboard.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-row">
+          <div class="brand">
+            <div class="brand-badge"><img src="../assets/media/photo/logo.png" width="30px" alt=""></div>
+            <strong>tunet</strong>
+          </div>
+          <div class="header-actions" aria-hidden="true">?</div>
+        </div>
+      </header>
+
+      <div class="wrap">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <nav class="nav">
+            <a href="#main" class="active">Əsas səhifə</a>
+            <a href="#history">Tarixçə</a>
+            <a href="#stats">Statistikalar <span class="pill">Yeni</span></a>
+            <a href="#profile">Biznes profili</a>
+          </nav>
+        </aside>
+
+        <!-- Main -->
+        <main class="main">
+          <!-- Default/Main -->
+          <section id="main" class="tab tab-default">
+            <div class="cards">
+              <div class="card">
+                <div class="k">
+                  <span>Günlük tranzaksiyalar</span
+                  ><span class="badge-green">28.4%</span>
+                </div>
+                <div style="font-size: 32px; font-weight: 800">1259</div>
+              </div>
+              <div class="card">
+                <div class="k">
+                  <span>Həftəlik tranzaksiyalar</span
+                  ><span class="badge-red">-12.35%</span>
+                </div>
+                <div style="font-size: 32px; font-weight: 800">8597</div>
+              </div>
+              <div class="card">
+                <div class="k">
+                  <span>Aylıq tranzaksiyalar</span
+                  ><span class="badge-green">8.9%</span>
+                </div>
+                <div style="font-size: 32px; font-weight: 800">30251</div>
+              </div>
+            </div>
+
+            <div class="table">
+              <div class="table-head">
+                <div class="table-tools">
+                  <h2 style="margin: 0">Tranzaksiyalar</h2>
+                  <div class="seg">
+                    <span class="btn">Bugün</span>
+                    <span class="btn muted">Son 7 gün</span>
+                    <span class="btn muted">Son 30 gün</span>
+                    <span class="btn muted">Hamısı</span>
+                  </div>
+                </div>
+                <div class="table-tools" style="margin-top: 12px">
+                  <div class="search"><input placeholder="Axtar" /></div>
+                  <span class="btn">Filtr</span>
+                </div>
+              </div>
+
+              <table>
+                <thead>
+                  <tr>
+                    <th>İstifadəçi</th>
+                    <th>Paket</th>
+                    <th>Tarix və saat</th>
+                    <th>Status</th>
+                    <th>Əməliyyatlar</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Row 1 -->
+                  <tr>
+                    <td>Sa*** Cü********</td>
+                    <td>Plus</td>
+                    <td>5 Dec 2025, 14:30</td>
+                    <td><span class="status ok">Qəbul edildi</span></td>
+                    <td class="act">
+                      <label
+                        for="modal-toggle"
+                        class="icon-btn"
+                        title="Daha çox"
+                        >⋯</label
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Sa*** Cü********</td>
+                    <td>Plus</td>
+                    <td>5 Dec 2025, 14:30</td>
+                    <td><span class="status wait">Gözləyir</span></td>
+                    <td class="act">
+                      <label
+                        for="modal-toggle"
+                        class="icon-btn"
+                        title="Daha çox"
+                        >⋯</label
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Sa*** Cü********</td>
+                    <td>Plus</td>
+                    <td>5 Dec 2025, 14:30</td>
+                    <td><span class="status deny">Rədd edildi</span></td>
+                    <td class="act">
+                      <label
+                        for="modal-toggle"
+                        class="icon-btn"
+                        title="Daha çox"
+                        >⋯</label
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Sa*** Cü********</td>
+                    <td>Plus</td>
+                    <td>5 Dec 2025, 14:30</td>
+                    <td><span class="status ok">Qəbul edildi</span></td>
+                    <td class="act">
+                      <label
+                        for="modal-toggle"
+                        class="icon-btn"
+                        title="Daha çox"
+                        >⋯</label
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Sa*** Cü********</td>
+                    <td>Plus</td>
+                    <td>5 Dec 2025, 14:30</td>
+                    <td><span class="status ok">Qəbul edildi</span></td>
+                    <td class="act">
+                      <label
+                        for="modal-toggle"
+                        class="icon-btn"
+                        title="Daha çox"
+                        >⋯</label
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Sa*** Cü********</td>
+                    <td>Plus</td>
+                    <td>5 Dec 2025, 14:30</td>
+                    <td><span class="status ok">Qəbul edildi</span></td>
+                    <td class="act">
+                      <label
+                        for="modal-toggle"
+                        class="icon-btn"
+                        title="Daha çox"
+                        >⋯</label
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Sa*** Cü********</td>
+                    <td>Plus</td>
+                    <td>5 Dec 2025, 14:30</td>
+                    <td><span class="status ok">Qəbul edildi</span></td>
+                    <td class="act">
+                      <label
+                        for="modal-toggle"
+                        class="icon-btn"
+                        title="Daha çox"
+                        >⋯</label
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- Profile -->
+          <section id="profile" class="tab">
+            <div class="profile-wrap">
+              <div class="profile-head">
+                <h1>Hesab məlumatları</h1>
+                <div style="display: flex; gap: 10px">
+                  <a class="btn">Baxış</a>
+                  <a class="btn">Ləğv et</a>
+                  <a class="btn primary">Yadda saxla</a>
+                </div>
+              </div>
+
+              <div class="form-card">
+                <div class="tabs" aria-hidden="true">
+                  <a class="active">Biznes detalları</a>
+                  <a>Pakətlər</a>
+                </div>
+
+                <h3 class="section-title">Detallar</h3>
+                <div class="grid-3" style="margin-bottom: 18px">
+                  <div>
+                    <div class="avatar">logo</div>
+                  </div>
+                  <div>
+                    <label>Biznesin adı *</label>
+                    <input type="text" placeholder="Value" />
+                  </div>
+                  <div>
+                    <label>Qısa məlumat (slogan) *</label>
+                    <input type="text" placeholder="Value" />
+                  </div>
+                  <div>
+                    <label>Kateqoriya *</label>
+                    <select>
+                      <option>Seçin</option>
+                    </select>
+                  </div>
+                </div>
+
+                <h3 class="section-title">İş saatları</h3>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 10px;
+                    margin-bottom: 10px;
+                  "
+                >
+                  <span class="btn">İstisna əlavə et</span>
+                  <span class="btn">Düzəliş et</span>
+                </div>
+
+                <div class="hours" style="margin-bottom: 18px">
+                  <!-- sample rows, visual only -->
+                  <div class="hour-row">
+                    <input type="checkbox" checked />
+                    <div>Bazar ertəsi</div>
+                    <div style="display: flex; gap: 8px">
+                      <input type="text" value="6:00" />
+                      <select>
+                        <option>AM</option>
+                        <option>PM</option>
+                      </select>
+                      <input type="text" value="10:00" />
+                      <select>
+                        <option>PM</option>
+                        <option>AM</option>
+                      </select>
+                    </div>
+                    <div></div>
+                  </div>
+                  <div class="hour-row">
+                    <input type="checkbox" checked />
+                    <div>Çərşənbə axşamı</div>
+                    <div style="display: flex; gap: 8px">
+                      <input type="text" value="6:00" />
+                      <select>
+                        <option>AM</option>
+                        <option>PM</option>
+                      </select>
+                      <input type="text" value="10:00" />
+                      <select>
+                        <option>PM</option>
+                        <option>AM</option>
+                      </select>
+                    </div>
+                    <div></div>
+                  </div>
+                  <div class="hour-row">
+                    <input type="checkbox" checked />
+                    <div>Çərşənbə</div>
+                    <div style="display: flex; gap: 8px">
+                      <input type="text" value="6:00" />
+                      <select>
+                        <option>AM</option>
+                        <option>PM</option>
+                      </select>
+                      <input type="text" value="10:00" />
+                      <select>
+                        <option>PM</option>
+                        <option>AM</option>
+                      </select>
+                    </div>
+                    <div></div>
+                  </div>
+                  <div class="hour-row">
+                    <input type="checkbox" checked />
+                    <div>Cümə axşamı</div>
+                    <div style="display: flex; gap: 8px">
+                      <input type="text" value="6:00" />
+                      <select>
+                        <option>AM</option>
+                        <option>PM</option>
+                      </select>
+                      <input type="text" value="10:00" />
+                      <select>
+                        <option>PM</option>
+                        <option>AM</option>
+                      </select>
+                    </div>
+                    <div></div>
+                  </div>
+                  <div class="hour-row">
+                    <input type="checkbox" checked />
+                    <div>Cümə</div>
+                    <div style="display: flex; gap: 8px">
+                      <input type="text" value="6:00" />
+                      <select>
+                        <option>AM</option>
+                        <option>PM</option>
+                      </select>
+                      <input type="text" value="10:00" />
+                      <select>
+                        <option>PM</option>
+                        <option>AM</option>
+                      </select>
+                    </div>
+                    <div></div>
+                  </div>
+                  <div class="hour-row">
+                    <input type="checkbox" checked />
+                    <div>Şənbə</div>
+                    <div class="pill-24">24 saat açıq</div>
+                    <div></div>
+                  </div>
+                  <div class="hour-row">
+                    <input type="checkbox" />
+                    <div>Bazar</div>
+                    <div style="color: #9ca3af">Bağlı</div>
+                    <div></div>
+                  </div>
+                </div>
+
+                <h3 class="section-title">Şəkillər</h3>
+                <div class="upload" style="margin-bottom: 18px">
+                  <div class="drop">Drag & drop — Maksimum 100MB</div>
+                  <div class="thumb">×</div>
+                  <div class="thumb">×</div>
+                </div>
+
+                <h3 class="section-title">Əlaqə və ünvan</h3>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-bottom: 10px;
+                  "
+                >
+                  <span class="btn">Əlavə et</span>
+                </div>
+                <div class="grid-2">
+                  <div>
+                    <label>Telefon nömrəsi</label>
+                    <div style="display: flex">
+                      <input type="text" value="+99451264589" />
+                      <span
+                        class="btn"
+                        style="
+                          border-left: 0;
+                          border-radius: 0 10px 10px 0;
+                          background: #fef2f2;
+                          color: var(--red);
+                        "
+                        >Sil</span
+                      >
+                    </div>
+                  </div>
+                  <div>
+                    <label>Whatsapp</label>
+                    <div style="display: flex">
+                      <input type="text" value="link:wahtsapp" />
+                      <span
+                        class="btn"
+                        style="
+                          border-left: 0;
+                          border-radius: 0 10px 10px 0;
+                          background: #fef2f2;
+                          color: var(--red);
+                        "
+                        >Sil</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- History -->
+          <section id="history" class="tab">
+            <div class="card" style="text-align: center; padding: 40px">
+            <div class="table">
+              <div class="table-head">
+                <div class="table-tools">
+                  <h2 style="margin: 0">Tranzaksiyalar</h2>
+                  <div class="seg">
+                    <span class="btn">Bugün</span>
+                    <span class="btn muted">Son 7 gün</span>
+                    <span class="btn muted">Son 30 gün</span>
+                    <span class="btn muted">Hamısı</span>
+                  </div>
+                </div>
+                <div class="table-tools" style="margin-top: 12px">
+                  <div class="search"><input placeholder="Axtar" /></div>
+                  <span class="btn">Filtr</span>
+                </div>
+              </div>
+
+              <table>
+                <thead>
+                  <tr>
+                    <th>İstifadəçi</th>
+                    <th>Paket</th>
+                    <th>Tarix və saat</th>
+                    <th>Status</th>
+                    <th>Əməliyyatlar</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Row 1 -->
+                  <tr>
+                    <td>Sa*** Cü********</td>
+                    <td>Plus</td>
+                    <td>5 Dec 2025, 14:30</td>
+                    <td><span class="status ok">Qəbul edildi</span></td>
+                    <td class="act">
+                      <label
+                        for="modal-toggle"
+                        class="icon-btn"
+                        title="Daha çox"
+                        >⋯</label
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Sa*** Cü********</td>
+                    <td>Plus</td>
+                    <td>5 Dec 2025, 14:30</td>
+                    <td><span class="status wait">Gözləyir</span></td>
+                    <td class="act">
+                      <label
+                        for="modal-toggle"
+                        class="icon-btn"
+                        title="Daha çox"
+                        >⋯</label
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Sa*** Cü********</td>
+                    <td>Plus</td>
+                    <td>5 Dec 2025, 14:30</td>
+                    <td><span class="status deny">Rədd edildi</span></td>
+                    <td class="act">
+                      <label
+                        for="modal-toggle"
+                        class="icon-btn"
+                        title="Daha çox"
+                        >⋯</label
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Sa*** Cü********</td>
+                    <td>Plus</td>
+                    <td>5 Dec 2025, 14:30</td>
+                    <td><span class="status ok">Qəbul edildi</span></td>
+                    <td class="act">
+                      <label
+                        for="modal-toggle"
+                        class="icon-btn"
+                        title="Daha çox"
+                        >⋯</label
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Sa*** Cü********</td>
+                    <td>Plus</td>
+                    <td>5 Dec 2025, 14:30</td>
+                    <td><span class="status ok">Qəbul edildi</span></td>
+                    <td class="act">
+                      <label
+                        for="modal-toggle"
+                        class="icon-btn"
+                        title="Daha çox"
+                        >⋯</label
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Sa*** Cü********</td>
+                    <td>Plus</td>
+                    <td>5 Dec 2025, 14:30</td>
+                    <td><span class="status ok">Qəbul edildi</span></td>
+                    <td class="act">
+                      <label
+                        for="modal-toggle"
+                        class="icon-btn"
+                        title="Daha çox"
+                        >⋯</label
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Sa*** Cü********</td>
+                    <td>Plus</td>
+                    <td>5 Dec 2025, 14:30</td>
+                    <td><span class="status ok">Qəbul edildi</span></td>
+                    <td class="act">
+                      <label
+                        for="modal-toggle"
+                        class="icon-btn"
+                        title="Daha çox"
+                        >⋯</label
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- Stats -->
+          <section id="stats" class="tab">
+            <div class="card" style="text-align: center; padding: 40px">
+              <h2>Statistikalar bölməsi hələ hazırlanmayıb</h2>
+              <p style="color: var(--muted)">
+                Bu bölmə yaxın zamanda istifadəyə veriləcək.
+              </p>
+            </div>
+          </section>
+        </main>
+      </div>
+
+      <!-- CSS-only Modal -->
+      <input type="checkbox" id="modal-toggle" />
+      <div class="modal-backdrop">
+        <div
+          class="modal"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="m-title"
+        >
+          <h3 id="m-title" style="margin-top: 0">Ödəniş qəbul edilsin?</h3>
+          <p style="color: var(--muted)">
+            Samir Cümşüdzadə “Plus” paketindən istifadə etmək üçün QR ödənişdən
+            istifadə etdi.
+          </p>
+          <div class="row">
+            <label
+              for="modal-toggle"
+              class="btn primary"
+              style="text-align: center"
+              >Təsdiqə</label
+            >
+            <label for="modal-toggle" class="btn" style="text-align: center"
+              >Ləğv et</label
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Keep the active state on sidebar by CSS only -->
+<script src="../assets/js/dasboard.js"></script>
+  </body>
+</html>
